@@ -8,6 +8,7 @@
   },
   "devDependencies": {
     "astro": "^0.22.13",
-    "astro-icon": "^0.5.3"
+    "astro-icon": "^0.5.3",
+    "sass": "^1.48.0"
   }
 }

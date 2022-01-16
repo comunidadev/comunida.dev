@@ -10,6 +10,9 @@
 export default /** @type {import('astro').AstroUserConfig} */ ({
 	// Enable the Preact renderer to support Preact JSX components.
 	renderers: [],
+  buildOptions: {
+    site: 'https://comunida.dev/',
+  },
   vite: {
     ssr: {
       external: ["svgo"],

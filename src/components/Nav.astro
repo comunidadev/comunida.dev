@@ -1,5 +1,9 @@
 ---
+
 import Icon from 'astro-icon';
+
+import Logo from './Logo.astro';
+
 ---
 
 <style>
@@ -11,16 +15,7 @@ import Icon from 'astro-icon';
 }
 
 .logo {
-	display: block;
-	color: var(--c-blue);
-	margin-right: 0.5rem;
-	font-weight: 900;
   font-size: var(--f-u3);
-  font-family: 'Rammetto One', cursive;
-}
-
-.logo-dot {
-  color: var(--c-purple);
 }
 
 .social {
@@ -30,35 +25,27 @@ import Icon from 'astro-icon';
 }
 
 .social + .social {
-  margin-left: 0.75rem;
+  margin-left: 1.25rem;
 }
 
-.socialicon {
-	display: block;
-	width: 1.25rem;
-	height: 1.25rem;
-	color: var(--c-purple);
-	transition: fill linear 150ms;
-
-}
-.socialicon:hover {
-  color: var(--c-pink);
-}
 </style>
 
 <nav class="nav">
-  <a class="logo" href="/">comunida<span class="logo-dot">.</span>dev</a>
+  <div class="logo"><Logo /></div>
 
   <a class="social" href="#">
-    <Icon name="mdi:youtube" class="socialicon" />
+    <Icon name="mdi:youtube" class="icon" />
   </a>
+
   <a class="social" href="https://twitter.com/_comunidadev">
-    <Icon name="mdi:twitter" class="socialicon" />
+    <Icon name="mdi:twitter" class="icon" />
   </a>
+
   <a class="social" href="#">
-    <Icon name="mdi:linkedin" class="socialicon" />
+    <Icon name="mdi:linkedin" class="icon" />
   </a>
+
   <a class="social" href="https://github.com/comunidadev">
-    <Icon name="mdi:github" class="socialicon" />
+    <Icon name="mdi:github" class="icon" />
   </a>
 </nav>

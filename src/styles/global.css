@@ -1,6 +1,4 @@
-// Tokens
 :root {
-	// (c)olor
 	--c-black: #05091e;
 	--c-blue: #417DB5;
 	--c-gray: #90aab7;
@@ -11,8 +9,7 @@
 	--c-white: #fff;
   --c-purple: #9041B5;
 
-	// (f)ont
-	--f-u18: 11.390625em;
+		--f-u18: 11.390625em;
 	--f-u17: 9.950627481136905em;
 	--f-u16: 8.692673779389363em;
 	--f-u15: 7.59375em;
@@ -49,19 +46,18 @@
 	--f-d17: 0.10049617492923625em;
 	--f-d18: 0.0877914951989026em;
 
-	// (t)heme
-	--t-fg: var(--c-white);
+		--t-fg: var(--c-white);
 	--t-bg: var(--c-black);
 	--t-subdue: var(--c-gray);
 	--t-active: var(--c-blue);
 }
 
-// Base
 
 body {
 	margin: 0;
 	color: var(--t-bg);
-	font-family: 'Inter', 'system-ui', sans-serif;
+	/*font-family: 'Inter', 'system-ui', sans-serif;*/
+  font-family: 'Roboto', 'system-ui', sans-serif;
 }
 
 * {
@@ -74,95 +70,21 @@ img {
 }
 
 a {
-	color: var(--t-active);
-}
-
-h1 {
-	font-size: var(--f-u8);
-}
-
-// Utils
-
-// color
-$colors: 'black', 'blue', 'white';
-@each $color in $colors {
-	// text color
-	.tc-#{$color} {
-		color: var(--c-#{color});
-	}
-	// background color
-	.bg-#{$color} {
-		background-color: var(--c-#{color});
-	}
-}
-
-// font size
-@for $i from 0 through 18 {
-	.f-u#{$i} {
-		font-size: var(--f-u#{$i});
-	}
-	.f-d#{$i} {
-		font-size: var(--f-d#{$i});
-	}
-}
-
-// margin & padding
-@for $i from 0 through 36 {
-	.ma#{$i} {
-		margin: #{0.5 * $i}rem;
-	}
-	.mt#{$i} {
-		margin-top: #{0.5 * $i}rem;
-	}
-	.mr#{$i} {
-		margin-right: #{0.5 * $i}rem;
-	}
-	.mb#{$i} {
-		margin-bottom: #{0.5 * $i}rem;
-	}
-	.ml#{$i} {
-		margin-left: #{0.5 * $i}rem;
-	}
-	.pa#{$i} {
-		padding: #{0.5 * $i}rem;
-	}
-	.pt#{$i} {
-		padding-top: #{0.5 * $i}rem;
-	}
-	.pr#{$i} {
-		padding-right: #{0.5 * $i}rem;
-	}
-	.pb#{$i} {
-		padding-bottom: #{0.5 * $i}rem;
-	}
-	.pl#{$i} {
-		padding-left: #{0.5 * $i}rem;
-	}
-}
-
-// text align
-.tac {
-	text-align: center;
-}
-.tal {
-	text-align: left;
-}
-.tar {
-	text-align: right;
-}
-
-// wrapper
-.wrapper {
-	max-width: 80em;
-	margin-left: auto;
-	margin-right: auto;
-	padding-left: 2rem;
-	padding-right: 2rem;
-}
-.wrapper__readable {
-	max-width: 50em;
-}
-
-a {
   text-decoration: none;
+}
+
+.logo {
+  font-family: 'Rammetto One', cursive;
+}
+
+.icon {
+	width: 1.75rem;
+	height: 1.75rem;
+	color: var(--c-purple);
+	transition: color linear 150ms;
+
+}
+
+.icon:hover {
+  color: var(--c-pink);
 }
