@@ -7,6 +7,7 @@
     "preview": "astro preview"
   },
   "devDependencies": {
-    "astro": "^0.22.13"
+    "astro": "^0.22.13",
+    "astro-icon": "^0.5.3"
   }
 }
