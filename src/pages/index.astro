@@ -5,10 +5,11 @@ import Icon from 'astro-icon';
 import MainHead from '../components/MainHead.astro';
 import Logo from '../components/Logo.astro';
 import Nav from '../components/Nav.astro';
+import MailchimpSignup from '../components/MailchimpSignup.astro';
 
 ---
 
-<html lang="en">
+<html lang="pt">
 	<head>
 		<MainHead title="Jeanine White: Personal Site" description="Jeanine White: Developer, Speaker, and Writer..." />
       <style>
@@ -102,10 +103,7 @@ import Nav from '../components/Nav.astro';
         
           <div class="signup">
             Já fechamos a primeira turma de mentorias e estamos preparando muito mais em breve, cadastre-se aqui pra não ficar de fora!
-            <form class="form">
-              <input class="email-field" type="email" placeholder="E-mail" />
-              <button class="submit-button" type="submit">Cadastre-se</button>
-            </form>
+            <MailchimpSignup/>
           </div>
         </div>
       </section>
