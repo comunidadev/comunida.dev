@@ -4,10 +4,11 @@ import Icon from 'astro-icon';
 
 import MainHead from '../components/MainHead.astro';
 import Nav from '../components/Nav.astro';
+import MailchimpSignup from '../components/MailchimpSignup.astro';
 
 ---
 
-<html lang="en">
+<html lang="pt">
 	<head>
     <MainHead />
     <style>
@@ -29,33 +30,6 @@ import Nav from '../components/Nav.astro';
       .signup {
         font-size: var(--f-u2);
         padding-top: 30px;
-      }
-
-      .form {
-        padding-top: 10px;
-      }
-
-      .email-field {
-        border-radius: 3px;
-        border: 1px solid #ccc;
-        width: 400px;
-        height: 42px;
-        padding: 0 20px;
-        font-size: var(--f-d1);
-        box-sizing: border-box;
-      }
-      
-      .submit-button {
-        background: var(--c-blue);
-        color: var(--c-white);
-        border: 0;
-        border-radius: 3px;
-        height: 42px;
-        width: 130px;
-        padding: 0;
-        cursor: pointer;
-        font-size: var(--f-d2);
-        vertical-align: top;
       }
 
 			.section-title {
@@ -105,10 +79,7 @@ import Nav from '../components/Nav.astro';
         
           <div class="signup">
             Já fechamos a primeira turma de mentorias e estamos preparando muito mais em breve, cadastre-se aqui pra não ficar de fora!
-            <form class="form">
-              <input class="email-field" type="email" placeholder="E-mail" />
-              <button class="submit-button" type="submit">Cadastre-se</button>
-            </form>
+            <MailchimpSignup/>
           </div>
         </div>
       </section>
