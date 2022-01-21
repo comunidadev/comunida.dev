@@ -48,7 +48,6 @@ import MailchimpSignup from '../components/MailchimpSignup.astro';
 
       .bio-photo {
         width: 200px;
-        height: 200px;
         border-radius: 50%;
       }
 
@@ -66,6 +65,29 @@ import MailchimpSignup from '../components/MailchimpSignup.astro';
         vertical-align: bottom;
       }
 
+
+      @media (max-width: 600px) {
+        .main-section {
+          grid-template-columns: 1fr;
+        }
+
+        .organizers {
+          grid-template-columns: 1fr;
+        }
+
+        .bio-photo {
+          display: block;
+          margin: 0 auto;
+        }
+
+        .bio-name, .social-links {
+          text-align: center;
+        }
+
+        .bio + .bio {
+          margin-top: 30px;
+        }
+      }
 		</style>
 	</head>
 	<body>
@@ -87,11 +109,11 @@ import MailchimpSignup from '../components/MailchimpSignup.astro';
       <section>
         <h2 class="section-title">Conheça os organizadores</h2>
         <div class="organizers">
-          <div>
+          <div class="bio">
             <img class="bio-photo" src="/assets/diego.jpg" />
             <p class="bio-name">Diego Ballona</p>
             <p class="bio-text">Gerente de engenharia com passagens pelo Toptal e Facebook. Atualmente trabalhando no Spotify como <i>Senior Engineering Manager</i>. Escreve sobre gestão de engenharia e engenharia de software.</p>
-            <p>
+            <p class="social-links">
               <a href="https://dballona.com/pt">
                 <Icon name='mdi:globe' class="icon" />
               </a>
@@ -104,11 +126,11 @@ import MailchimpSignup from '../components/MailchimpSignup.astro';
             </p>
           </div>
 
-          <div>
+          <div class="bio">
             <img class="bio-photo" src="/assets/tadeu.jpg" />
             <p class="bio-name">Tadeu Zagallo</p>
             <p class="bio-text">Desenvolvedor de software apaixanado por linguagens de programação e <i>developer experience</i>. Atualmente trabalhando como <i>Principal Engineer</i> na Klarna, com passagens pela Apple, Uber e Facebook.</p>
-            <p>
+            <p class="social-links">
               <a href="https://tadeuzagallo.com/blog/pt/">
                 <Icon name='mdi:globe' class="icon" />
               </a>
