@@ -34,11 +34,24 @@ import Icon from 'astro-icon';
 
   .logo {
     width: 200px;
-    vertical-align: middle;
   }
 
   .social + .social {
     margin-left: 0.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav {
+    padding: 1rem 0.5rem;
+  }
+
+  .logo {
+    width: 180px;
+  }
+
+  .social + .social {
+    margin-left: 0.25rem;
   }
 }
 
