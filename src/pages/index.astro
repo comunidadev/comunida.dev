@@ -3,7 +3,6 @@
 import Icon from 'astro-icon';
 
 import MainHead from '../components/MainHead.astro';
-import Logo from '../components/Logo.astro';
 import Nav from '../components/Nav.astro';
 import MailchimpSignup from '../components/MailchimpSignup.astro';
 
@@ -11,8 +10,8 @@ import MailchimpSignup from '../components/MailchimpSignup.astro';
 
 <html lang="pt">
 	<head>
-		<MainHead title="Jeanine White: Personal Site" description="Jeanine White: Developer, Speaker, and Writer..." />
-      <style>
+    <MainHead />
+    <style>
       .wrapper {
         max-width: 80em;
         margin: 2rem auto;
@@ -62,6 +61,11 @@ import MailchimpSignup from '../components/MailchimpSignup.astro';
         margin-right: 10px;
       }
 
+      .logo {
+        height: 2rem;
+        vertical-align: bottom;
+      }
+
 		</style>
 	</head>
 	<body>
@@ -71,7 +75,7 @@ import MailchimpSignup from '../components/MailchimpSignup.astro';
         
         <div>
           <div class="tagline">
-            A <Logo /> é uma comunidade brasileira <b>100% voluntária</b> focada em ajudar pessoas da area de desenvolvimento e gerência de software a evoluir em suas carreiras.
+            A <img class="logo" src="/assets/logo-black.svg" alt="comunida.dev" /> é uma comunidade brasileira <b>100% voluntária</b> focada em ajudar pessoas da area de desenvolvimento e gerência de software a evoluir em suas carreiras.
           </div>
         
           <div class="signup">
@@ -87,7 +91,7 @@ import MailchimpSignup from '../components/MailchimpSignup.astro';
           <div>
             <img class="bio-photo" src="/assets/diego.jpg" />
             <p class="bio-name">Diego Ballona</p>
-            <p class="bio-text">Gerente de engenharia de software, atualmente trabalhando no Spotify. Escreve sobre gestão de engenharia, engenharia de software e desenvolvimento de produtos.</p>
+            <p class="bio-text">Escreve sobre gestão de engenharia, engenharia de software e desenvolvimento de produtos. Atualmente trabalhando no Spotify como <i>Senior Engineering Manager</i>, com passagens pelo Toptal e WhatsApp.</p>
             <p>
               <a href="https://dballona.com/pt">
                 <Icon name='mdi:globe' class="icon" />

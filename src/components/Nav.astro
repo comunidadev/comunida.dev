@@ -2,8 +2,6 @@
 
 import Icon from 'astro-icon';
 
-import Logo from './Logo.astro';
-
 ---
 
 <style>
@@ -15,7 +13,7 @@ import Logo from './Logo.astro';
 }
 
 .logo {
-  font-size: var(--f-u3);
+  vertical-align: middle;
 }
 
 .social {
@@ -31,7 +29,9 @@ import Logo from './Logo.astro';
 </style>
 
 <nav class="nav">
-  <div class="logo"><Logo /></div>
+  <a href="/">
+    <img class="logo" src="/assets/logo-white.svg" alt="comunida.dev" width="300" />
+  </a>
 
   <a class="social" href="#">
     <Icon name="mdi:youtube" class="icon" />
