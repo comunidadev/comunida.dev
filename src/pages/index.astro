@@ -13,14 +13,14 @@ import MailchimpSignup from '../components/MailchimpSignup.astro';
     <MainHead />
     <style>
       .wrapper {
-        max-width: 80em;
+        max-width: 1000px;
         margin: 2rem auto;
         padding: 0 2rem;
       }
 
       .main-section {
         display: grid;
-        grid-template-columns: 2fr 1fr;
+        /* grid-template-columns: 2fr 1fr; */
       }
 
       .tagline {
@@ -29,7 +29,7 @@ import MailchimpSignup from '../components/MailchimpSignup.astro';
 
       .signup {
         font-size: var(--f-u2);
-        padding-top: 30px;
+        padding-top: var(--m-1);
       }
 
 			.section-title {
@@ -90,7 +90,7 @@ import MailchimpSignup from '../components/MailchimpSignup.astro';
           <div>
             <img class="bio-photo" src="/assets/diego.jpg" />
             <p class="bio-name">Diego Ballona</p>
-            <p class="bio-text">Gerente de engenharia com passagens pelo Toptal e Facebook. Atualmente trabalhando no Spotify como <i>Senior Engineering Manager</i>. Escreve sobre gestão de engenharia, produto, e engenharia de software.</p>
+            <p class="bio-text">Gerente de engenharia com passagens pelo Toptal e Facebook. Atualmente trabalhando no Spotify como <i>Senior Engineering Manager</i>. Escreve sobre gestão de engenharia e engenharia de software.</p>
             <p>
               <a href="https://dballona.com/pt">
                 <Icon name='mdi:globe' class="icon" />

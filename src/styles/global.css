@@ -9,7 +9,7 @@
 	--c-white: #fff;
   --c-purple: #9041B5;
 
-		--f-u18: 11.390625em;
+	--f-u18: 11.390625em;
 	--f-u17: 9.950627481136905em;
 	--f-u16: 8.692673779389363em;
 	--f-u15: 7.59375em;
@@ -46,10 +46,12 @@
 	--f-d17: 0.10049617492923625em;
 	--f-d18: 0.0877914951989026em;
 
-		--t-fg: var(--c-white);
+	--t-fg: var(--c-white);
 	--t-bg: var(--c-black);
 	--t-subdue: var(--c-gray);
 	--t-active: var(--c-blue);
+
+  --m-1: 30px;
 }
 
 
@@ -87,4 +89,16 @@ a {
 
 .icon:hover {
   color: var(--c-pink);
+}
+
+input {
+  padding: var(--f-d8);
+  font-size: 1em;
+  border: 0 none;
+  border-radius: 0;
+}
+
+input[type=submit] {
+  background: var(--c-purple);
+  color: var(--c-white);
 }
