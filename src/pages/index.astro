@@ -9,10 +9,8 @@ import MailchimpSignup from '../components/MailchimpSignup.astro';
 import GoogleTagManagerHead from '../components/GoogleTagManager/Head.astro';
 import GoogleTagManagerBody from '../components/GoogleTagManager/Body.astro';
 
-const {
-  googleTagManagerId = 'GTM-W93Q3BD',
-  inProduction = import.meta.env.PROD
-} = Astro.props;
+const googleTagManagerId = 'GTM-W93Q3BD';
+const inProduction = import.meta.env.PROD;
 
 ---
 <html lang="pt">
