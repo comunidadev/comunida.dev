@@ -1,10 +1,10 @@
 ---
-import '../styles/global.css';
 
 const {
   title = 'Comunida.dev',
   description = 'A comunida.dev é uma comunidade brasileira 100% voluntária focada em ajudar pessoas da area de desenvolvimento e gerência de software a evoluir em suas carreiras.'
 } = Astro.props;
+
 ---
 
 <meta charset="UTF-8" />
@@ -13,9 +13,11 @@ const {
 <title>{title}</title>
 
 <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-<link rel="preconnect" href="https://fonts.gstatic.com" />
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700;900&display=swap" rel="stylesheet" />
 
 <link rel="preconnect" href="https://fonts.googleapis.com"> 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-<link href="https://fonts.googleapis.com/css2?family=Rammetto+One&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+<style global>
+@import "../styles/global.css";
+</style>

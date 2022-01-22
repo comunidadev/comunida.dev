@@ -1,4 +1,4 @@
-<style type="text/css">
+<style>
 
   .mailchimp-signup {
     width: calc(100% - (var(--m-1) * 2));
@@ -9,48 +9,54 @@
     margin-top: var(--m-1);
   }
 
-  .mailchimp-signup h2 {
+  .title {
     margin: 0;
   }
 
-  .mailchimp-signup form input[type=email],
-  .mailchimp-signup form input[type=submit] {
+  .email, .button {
     padding-top: var(--f-d5);
     padding-bottom: var(--f-d5);
+    font-size: 1em;
+    border: 0;
+    border-radius: 0;
+    box-sizing: border-box;
   }
 
-  .mailchimp-signup form input[type=email] {
-    width: calc(100% - 120px - 34px);
+  .email {
+    width: calc(100% - 120px - 20px);
     display: inline-block;
   }
 
-  .mailchimp-signup form input[type=submit] {
+  .button {
+    background: var(--c-purple);
+    color: var(--c-white);
     width: 120px;
     display: inline-block;
   }
 
   @media (max-width: 600px) {
-    .mailchimp-signup form input[type=email],
-    .mailchimp-signup form input[type=submit] {
-      width: calc(100% - 14px);
+    .email, .button {
+      width: 100%;
     }
   }
 </style>
 
 <!-- Begin Mailchimp Signup Form -->
 <div class="mailchimp-signup">
-  <h2>Mantenha-se informado(a)</h2>
+  <h2 class="title">Mantenha-se informado(a)</h2>
   <p>Fechamos a primeira turma de mentorias 1:1 e estamos preparando muito mais. Cadastre-se aqui pra não ficar de fora!</p>
 
   <form action="https://dev.us20.list-manage.com/subscribe/post?u=245072bca5ca1d9b299eb5fe7&amp;id=b3cfa3b224" method="post" name="mc-embedded-subscribe-form" target="_blank">
     <label for="mce-EMAIL">Email<span class="asterisk">*</span></label><br/>
     <div class="input">
       <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" required />
-      <input type="submit" value="Cadastrar" name="subscribe" id="mc-embedded-subscribe" class="button" />
+      <button name="subscribe" id="mc-embedded-subscribe" class="button">Cadastrar</button>
     </div>
 
     <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_245072bca5ca1d9b299eb5fe7_b3cfa3b224" tabindex="-1" value=""></div>
+    <div style="position: absolute; left: -5000px;" aria-hidden="true">
+      <input type="text" name="b_245072bca5ca1d9b299eb5fe7_b3cfa3b224" tabindex="-1" value="">
+    </div>
   </form>
 </div>
 <!--End mc_embed_signup-->

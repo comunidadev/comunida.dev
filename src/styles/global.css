@@ -58,7 +58,6 @@
 body {
 	margin: 0;
 	color: var(--t-bg);
-	/*font-family: 'Inter', 'system-ui', sans-serif;*/
   font-family: 'Roboto', 'system-ui', sans-serif;
 }
 
