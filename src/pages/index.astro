@@ -13,7 +13,7 @@ import MailchimpSignup from '../components/MailchimpSignup.astro';
     <MainHead />
     <style>
       .wrapper {
-        max-width: 1000px;
+        max-width: 960px;
         margin: 2rem auto;
         padding: 0 2rem;
       }
@@ -27,16 +27,10 @@ import MailchimpSignup from '../components/MailchimpSignup.astro';
         font-size: var(--f-u3);
       }
 
-      .signup {
-        font-size: var(--f-u2);
-        padding-top: var(--m-1);
-      }
-
 			.section-title {
 				font-weight: 700;
 				font-size: var(--f-u8);
-				margin-top: 4rem;
-				margin-bottom: 2rem;
+				margin: 2rem 0;
 			}
 
       .organizers {
@@ -98,11 +92,7 @@ import MailchimpSignup from '../components/MailchimpSignup.astro';
           <div class="tagline">
             A <img class="logo" src="/assets/logo-black.svg" alt="comunida.dev" /> é uma comunidade brasileira <b>100% voluntária</b> focada em ajudar pessoas da area de desenvolvimento e gerência de software a evoluir em suas carreiras.
           </div>
-        
-          <div class="signup">
-            Já fechamos a primeira turma de mentorias e estamos preparando muito mais em breve, cadastre-se aqui pra não ficar de fora!
-            <MailchimpSignup/>
-          </div>
+          <MailchimpSignup/>
         </div>
       </section>
 

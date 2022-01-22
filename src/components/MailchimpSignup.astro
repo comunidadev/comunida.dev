@@ -1,9 +1,22 @@
 <style type="text/css">
+
   .mailchimp-signup {
     width: calc(100% - (var(--m-1) * 2));
     padding: var(--m-1) var(--m-1) calc(var(--m-1) * 1.5);
-    margin-top: var(--m-1);
     background: var(--c-gray);
+
+    font-size: var(--f-u2);
+    margin-top: var(--m-1);
+  }
+
+  .mailchimp-signup h2 {
+    margin: 0;
+  }
+
+  .mailchimp-signup form input[type=email],
+  .mailchimp-signup form input[type=submit] {
+    padding-top: var(--f-d5);
+    padding-bottom: var(--f-d5);
   }
 
   .mailchimp-signup form input[type=email] {
@@ -15,14 +28,26 @@
     width: 120px;
     display: inline-block;
   }
+
+  @media (max-width: 600px) {
+    .mailchimp-signup form input[type=email],
+    .mailchimp-signup form input[type=submit] {
+      width: calc(100% - 14px);
+    }
+  }
 </style>
 
 <!-- Begin Mailchimp Signup Form -->
 <div class="mailchimp-signup">
+  <h2>Mantenha-se informado(a)</h2>
+  <p>Fechamos a primeira turma de mentorias 1:1 e estamos preparando muito mais. Cadastre-se aqui pra não ficar de fora!</p>
+
   <form action="https://dev.us20.list-manage.com/subscribe/post?u=245072bca5ca1d9b299eb5fe7&amp;id=b3cfa3b224" method="post" name="mc-embedded-subscribe-form" target="_blank">
     <label for="mce-EMAIL">Email<span class="asterisk">*</span></label><br/>
-    <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" required />
-    <input type="submit" value="Cadastrar" name="subscribe" id="mc-embedded-subscribe" class="button" />
+    <div class="input">
+      <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" required />
+      <input type="submit" value="Cadastrar" name="subscribe" id="mc-embedded-subscribe" class="button" />
+    </div>
 
     <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
     <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_245072bca5ca1d9b299eb5fe7_b3cfa3b224" tabindex="-1" value=""></div>
