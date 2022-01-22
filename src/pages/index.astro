@@ -6,11 +6,18 @@ import MainHead from '../components/MainHead.astro';
 import Nav from '../components/Nav.astro';
 import MailchimpSignup from '../components/MailchimpSignup.astro';
 
----
+import GoogleTagManagerHead from '../components/GoogleTagManager/Head.astro';
+import GoogleTagManagerBody from '../components/GoogleTagManager/Body.astro';
 
+const googleTagManagerId = 'GTM-W93Q3BD';
+const inProduction = import.meta.env.PROD;
+
+---
 <html lang="pt">
 	<head>
     <MainHead />
+    {inProduction && <GoogleTagManagerHead id={googleTagManagerId} />}
+
     <style>
       .wrapper {
         max-width: 960px;
@@ -85,7 +92,8 @@ import MailchimpSignup from '../components/MailchimpSignup.astro';
 		</style>
 	</head>
 	<body>
-		<Nav />
+    {inProduction && <GoogleTagManagerBody id={googleTagManagerId} />}
+    <Nav />
 		<main class="wrapper">
       <section class="main-section">
         <div>
