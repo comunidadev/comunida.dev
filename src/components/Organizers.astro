@@ -1,0 +1,43 @@
+---
+
+import Bio from './Bio.astro';
+
+---
+
+<style>
+.organizers {
+  display: grid;
+  max-width: 800px;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+}
+
+@media (max-width: 600px) {
+  .organizers {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+
+<section>
+  <h2 class="section-title">Conheça os organizadores</h2>
+  <div class="organizers">
+    <Bio
+      id="diego"
+      name="Diego Ballona"
+      bio="Gerente de engenharia com passagens pelo Toptal e Facebook. Atualmente trabalhando no Spotify como <i>Senior Engineering Manager</i>. Escreve sobre gestão de engenharia e engenharia de software."
+      website="https://dballona.com/pt"
+      twitter="https://twitter.com/dballona"
+      linkedin="https://www.linkedin.com/in/dballona/"
+      />
+
+    <Bio
+      id="tadeu"
+      name="Tadeu Zagallo"
+      bio="Desenvolvedor de software apaixanado por linguagens de programação e <i>developer experience</i>. Atualmente trabalhando como <i>Principal Engineer</i> na Klarna, com passagens pela Apple, Uber e Facebook."
+      website="https://tadeuzagallo.com/blog/pt/"
+      twitter="https://twitter.com/tadeuzagallo"
+      linkedin="https://www.linkedin.com/in/tadeuzagallo/"
+      />
+  </div>
+</section>

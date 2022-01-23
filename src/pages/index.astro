@@ -5,6 +5,7 @@ import Icon from 'astro-icon';
 import MainHead from '../components/MainHead.astro';
 import Nav from '../components/Nav.astro';
 import MailchimpSignup from '../components/MailchimpSignup.astro';
+import Organizers from '../components/Organizers.astro';
 
 import GoogleTagManagerHead from '../components/GoogleTagManager/Head.astro';
 import GoogleTagManagerBody from '../components/GoogleTagManager/Body.astro';
@@ -27,38 +28,17 @@ const inProduction = import.meta.env.PROD;
 
       .main-section {
         display: grid;
-        /* grid-template-columns: 2fr 1fr; */
       }
 
       .tagline {
         font-size: var(--f-u3);
       }
 
-			.section-title {
-				font-weight: 700;
-				font-size: var(--f-u8);
-				margin: 2rem 0;
-			}
-
       .organizers {
         display: grid;
         max-width: 800px;
         grid-template-columns: 1fr 1fr;
         column-gap: 20px;
-      }
-
-      .bio-photo {
-        width: 200px;
-        border-radius: 50%;
-      }
-
-      .bio-name {
-        font-weight: bold;
-				font-size: var(--f-u1);
-      }
-
-      .icon {
-        margin-right: 10px;
       }
 
       .logo {
@@ -104,60 +84,8 @@ const inProduction = import.meta.env.PROD;
         </div>
       </section>
 
-      <section>
-        <h2 class="section-title">Conheça os organizadores</h2>
-        <div class="organizers">
-          <div class="bio">
-            <picture>
-              <source srcset="
-                /assets/diego_200.webp 1x,
-                /assets/diego_400.webp 2x" type="image/webp">
-              <source srcset="
-                /assets/diego_200.jpg 1x,
-                /assets/diego_400.jpg 2x" type="image/jpeg">
-              <img src="/assets/diego_200.jpg" class="bio-photo" alt="Foto do perfil do Diego Ballona" width=200 height=200>
-            </picture>
-            <p class="bio-name">Diego Ballona</p>
-            <p class="bio-text">Gerente de engenharia com passagens pelo Toptal e Facebook. Atualmente trabalhando no Spotify como <i>Senior Engineering Manager</i>. Escreve sobre gestão de engenharia e engenharia de software.</p>
-            <p class="social-links">
-              <a href="https://dballona.com/pt" aria-label="Site do Diego Ballona" target="_blank" rel="noopener">
-                <Icon name='mdi:globe' class="icon" />
-              </a>
-              <a href="https://twitter.com/dballona" aria-label="Diego Ballona no Twitter" target="_blank" rel="noopener">
-                <Icon name='mdi:twitter' class="icon" />
-              </a>
-              <a href="https://www.linkedin.com/in/dballona/" aria-label="Diego Ballona no LinkedIn" target="_blank" rel="noopener">
-                <Icon name='mdi:linkedin' class="icon" />
-              </a>
-            </p>
-          </div>
 
-          <div class="bio">
-            <picture>
-              <source srcset="
-                /assets/tadeu_200.webp 1x,
-                /assets/tadeu_400.webp 2x" type="image/webp">
-              <source srcset="
-                /assets/tadeu_200.jpg 1x,
-                /assets/tadeu_400.jpg 2x" type="image/jpeg">
-              <img src="/assets/tadeu_200.jpg" class="bio-photo" alt="Foto do perfil do Tadeu Zagallo" width=200 height=200 />
-            </picture>
-            <p class="bio-name">Tadeu Zagallo</p>
-            <p class="bio-text">Desenvolvedor de software apaixanado por linguagens de programação e <i>developer experience</i>. Atualmente trabalhando como <i>Principal Engineer</i> na Klarna, com passagens pela Apple, Uber e Facebook.</p>
-            <p class="social-links">
-              <a href="https://tadeuzagallo.com/blog/pt/" aria-label="Site do Tadeu Zagallo" target="_blank" rel="noopener">
-                <Icon name='mdi:globe' class="icon" />
-              </a>
-              <a href="https://twitter.com/tadeuzagallo" aria-label="Tadeu Zagallo no Twitter" target="_blank" rel="noopener">
-                <Icon name='mdi:twitter' class="icon" />
-              </a>
-              <a href="https://www.linkedin.com/in/tadeuzagallo/" aria-label="Tadeu Zagallo no LinkedIn" target="_blank" rel="noopener">
-                <Icon name='mdi:linkedin' class="icon" />
-              </a>
-            </p>
-          </div>
-        </div>
-      </section>
+      <Organizers />
 		</main>
 	</body>
 </html>

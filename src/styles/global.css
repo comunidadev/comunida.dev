@@ -83,9 +83,14 @@ a {
 	height: 1.75rem;
 	color: var(--c-purple);
 	transition: color linear 150ms;
-
 }
 
 .icon:hover {
   color: var(--c-pink);
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: var(--f-u8);
+  margin: 2rem 0;
 }

@@ -1,0 +1,66 @@
+---
+
+import Icon from 'astro-icon';
+
+const {
+  id,
+  name,
+  bio,
+  website,
+  twitter,
+  linkedin,
+} = Astro.props;
+
+---
+
+<style>
+.bio-photo {
+  width: 200px;
+  border-radius: 50%;
+}
+
+.bio-name {
+  font-weight: bold;
+  font-size: var(--f-u1);
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+@media (max-width: 600px) {
+  .bio-photo {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .bio-name, .social-links {
+    text-align: center;
+  }
+
+  .bio + .bio {
+    margin-top: 30px;
+  }
+}
+</style>
+
+<div class="bio">
+  <picture>
+    <source srcset={`/assets/${id}/200.webp 1x, /assets/${id}/400.webp 2x`} type="image/webp">
+    <source srcset={`/assets/${id}/200.jpg 1x, /assets/${id}/400.jpg 2x`} type="image/jpeg">
+    <img src={`/assets/${id}/200.jpg`} class="bio-photo" alt={`Foto do perfil de ${name}`} width=200 height=200 />
+  </picture>
+  <p class="bio-name">{name}</p>
+  <p class="bio-text">{bio}</p>
+  <p class="social-links">
+    <a href={website} aria-label={`Site do ${name}`} target="_blank" rel="noopener">
+      <Icon name='mdi:globe' class="icon" />
+    </a>
+    <a href={twitter} aria-label={`${name} no Twitter`} target="_blank" rel="noopener">
+      <Icon name='mdi:twitter' class="icon" />
+    </a>
+    <a href={linkedin} aria-label={`${name} no LinkedIn`} target="_blank" rel="noopener">
+      <Icon name='mdi:linkedin' class="icon" />
+    </a>
+  </p>
+</div>
