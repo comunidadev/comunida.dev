@@ -1,6 +1,7 @@
 ---
 
 import Icon from 'astro-icon';
+import Logo from './Logo.astro';
 
 ---
 
@@ -15,6 +16,7 @@ import Icon from 'astro-icon';
 .logo {
   width: 300px;
   vertical-align: middle;
+  color: white;
 }
 
 .social {
@@ -59,7 +61,10 @@ import Icon from 'astro-icon';
 
 <nav class="nav">
   <a href="/">
-    <img class="logo" src="/assets/logo-white.svg" alt="comunida.dev" width=300 height=48 />
+    <svg role="img" class="logo" viewbox="0 0 780 124" width=300 height=48>
+      <title>Logo da Comunida.dev</title>
+      <use xlink:href="#logo">
+    </svg>
   </a>
 
   <a class="social" href="https://www.youtube.com/channel/UC706xZkWHE38HnuhcqCsb5g" aria-label="Canal da Comunida.dev no YouTube" target="_blank" rel="noopener">

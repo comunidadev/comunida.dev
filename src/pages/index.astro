@@ -6,6 +6,7 @@ import MainHead from '../components/MainHead.astro';
 import Nav from '../components/Nav.astro';
 import Header from '../components/Header.astro';
 import Organizers from '../components/Organizers.astro';
+import Logo from '../components/Logo.astro';
 
 import GoogleTagManagerHead from '../components/GoogleTagManager/Head.astro';
 import GoogleTagManagerBody from '../components/GoogleTagManager/Body.astro';
@@ -33,9 +34,8 @@ const inProduction = import.meta.env.PROD;
     <Nav />
 		<main class="wrapper">
       <Header />
-
-
       <Organizers />
+      <Logo />
 		</main>
 	</body>
 </html>
