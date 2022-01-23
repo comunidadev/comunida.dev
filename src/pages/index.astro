@@ -4,7 +4,7 @@ import Icon from 'astro-icon';
 
 import MainHead from '../components/MainHead.astro';
 import Nav from '../components/Nav.astro';
-import MailchimpSignup from '../components/MailchimpSignup.astro';
+import Header from '../components/Header.astro';
 import Organizers from '../components/Organizers.astro';
 
 import GoogleTagManagerHead from '../components/GoogleTagManager/Head.astro';
@@ -14,6 +14,7 @@ const googleTagManagerId = 'GTM-W93Q3BD';
 const inProduction = import.meta.env.PROD;
 
 ---
+
 <html lang="pt">
 	<head>
     <MainHead />
@@ -25,64 +26,13 @@ const inProduction = import.meta.env.PROD;
         margin: 2rem auto;
         padding: 0 2rem;
       }
-
-      .main-section {
-        display: grid;
-      }
-
-      .tagline {
-        font-size: var(--f-u3);
-      }
-
-      .organizers {
-        display: grid;
-        max-width: 800px;
-        grid-template-columns: 1fr 1fr;
-        column-gap: 20px;
-      }
-
-      .logo {
-        height: 2rem;
-        vertical-align: bottom;
-      }
-
-
-      @media (max-width: 600px) {
-        .main-section {
-          grid-template-columns: 1fr;
-        }
-
-        .organizers {
-          grid-template-columns: 1fr;
-        }
-
-        .bio-photo {
-          display: block;
-          margin: 0 auto;
-        }
-
-        .bio-name, .social-links {
-          text-align: center;
-        }
-
-        .bio + .bio {
-          margin-top: 30px;
-        }
-      }
 		</style>
 	</head>
 	<body>
     {inProduction && <GoogleTagManagerBody id={googleTagManagerId} />}
     <Nav />
 		<main class="wrapper">
-      <section class="main-section">
-        <div>
-          <div class="tagline">
-            A <img class="logo" src="/assets/logo-black.svg" alt="comunida.dev" width=200 height=32 /> é uma comunidade brasileira <b>100% voluntária</b> focada em ajudar pessoas da area de desenvolvimento e gerência de software a evoluir em suas carreiras.
-          </div>
-          <MailchimpSignup/>
-        </div>
-      </section>
+      <Header />
 
 
       <Organizers />

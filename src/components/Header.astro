@@ -1,0 +1,25 @@
+---
+
+import MailchimpSignup from '../components/MailchimpSignup.astro';
+
+---
+
+<style>
+.tagline {
+  font-size: var(--f-u3);
+}
+
+.logo {
+  height: 2rem;
+  vertical-align: bottom;
+}
+</style>
+
+<section>
+  <div>
+    <div class="tagline">
+      A <img class="logo" src="/assets/logo-black.svg" alt="comunida.dev" width=200 height=32 /> é uma comunidade brasileira <b>100% voluntária</b> focada em ajudar pessoas da area de desenvolvimento e gerência de software a evoluir em suas carreiras.
+    </div>
+    <MailchimpSignup/>
+  </div>
+</section>
