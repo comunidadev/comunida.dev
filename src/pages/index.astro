@@ -108,7 +108,15 @@ const inProduction = import.meta.env.PROD;
         <h2 class="section-title">Conheça os organizadores</h2>
         <div class="organizers">
           <div class="bio">
-            <img class="bio-photo" src="/assets/diego.jpg" alt="Foto do perfil do Diego Ballona" width=200 height=200 />
+            <picture>
+              <source srcset="
+                /assets/diego_200.webp 1x,
+                /assets/diego_400.webp 2x" type="image/webp">
+              <source srcset="
+                /assets/diego_200.jpg 1x,
+                /assets/diego_400.jpg 2x" type="image/jpeg">
+              <img src="/assets/diego_200.jpg" class="bio-photo" alt="Foto do perfil do Diego Ballona" width=200 height=200>
+            </picture>
             <p class="bio-name">Diego Ballona</p>
             <p class="bio-text">Gerente de engenharia com passagens pelo Toptal e Facebook. Atualmente trabalhando no Spotify como <i>Senior Engineering Manager</i>. Escreve sobre gestão de engenharia e engenharia de software.</p>
             <p class="social-links">
@@ -125,7 +133,15 @@ const inProduction = import.meta.env.PROD;
           </div>
 
           <div class="bio">
-            <img class="bio-photo" src="/assets/tadeu.jpg" alt="Foto do perfil do Tadeu Zagallo" width=200 height=200 />
+            <picture>
+              <source srcset="
+                /assets/tadeu_200.webp 1x,
+                /assets/tadeu_400.webp 2x" type="image/webp">
+              <source srcset="
+                /assets/tadeu_200.jpg 1x,
+                /assets/tadeu_400.jpg 2x" type="image/jpeg">
+              <img src="/assets/tadeu_200.jpg" class="bio-photo" alt="Foto do perfil do Tadeu Zagallo" width=200 height=200 />
+            </picture>
             <p class="bio-name">Tadeu Zagallo</p>
             <p class="bio-text">Desenvolvedor de software apaixanado por linguagens de programação e <i>developer experience</i>. Atualmente trabalhando como <i>Principal Engineer</i> na Klarna, com passagens pela Apple, Uber e Facebook.</p>
             <p class="social-links">
