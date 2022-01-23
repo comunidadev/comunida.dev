@@ -3,12 +3,12 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build",
+    "build": "astro build && node cssinline.js",
     "preview": "astro preview"
   },
   "devDependencies": {
     "astro": "^0.22.13",
     "astro-icon": "^0.5.3",
-    "sass": "^1.48.0"
+    "critical": "^4.0.1"
   }
 }
