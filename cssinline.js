@@ -7,4 +7,7 @@ critical.generate({
   target: 'index.html',
   inline: true,
   extract: false,
+  ignore: {
+    atrule: ['@font-face'],
+  },
 });
