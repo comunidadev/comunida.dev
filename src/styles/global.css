@@ -89,15 +89,3 @@ a {
 .icon:hover {
   color: var(--c-pink);
 }
-
-input {
-  padding: var(--f-d8);
-  font-size: 1em;
-  border: 0 none;
-  border-radius: 0;
-}
-
-input[type=submit] {
-  background: var(--c-purple);
-  color: var(--c-white);
-}

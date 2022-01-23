@@ -5,6 +5,8 @@ const {
   description = 'A comunida.dev é uma comunidade brasileira 100% voluntária focada em ajudar pessoas da area de desenvolvimento e gerência de software a evoluir em suas carreiras.'
 } = Astro.props;
 
+const fontHref = "https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap";
+
 ---
 
 <meta charset="UTF-8" />
@@ -16,7 +18,20 @@ const {
 
 <link rel="preconnect" href="https://fonts.googleapis.com"> 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+<link rel="preload" as="style" href={fontHref} />
+<link
+  rel="stylesheet"
+  href={fontHref}
+  media="print"
+  onload="this.media='all'"
+/>
+<noscript>
+  <link
+    rel="stylesheet"
+    href={fontHref}
+  />
+</noscript>
 
 <style global>
 @import "../styles/global.css";
