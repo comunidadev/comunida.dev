@@ -29,6 +29,25 @@ import Logo from './Logo.astro';
   margin-left: 1.25rem;
 }
 
+.internal-links {
+  margin-left: 20px;
+}
+
+.internal-link {
+  color: var(--c-white);
+  margin-left: 20px;
+}
+
+.internal-link:hover {
+  color: var(--c-purple);
+}
+
+@media (max-width: 850px) {
+  .internal-links {
+    display: none;
+  }
+}
+
 @media (max-width: 600px) {
   .nav {
     padding: 1rem;
@@ -43,7 +62,7 @@ import Logo from './Logo.astro';
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 350px) {
   .nav {
     padding: 1rem 0.5rem;
   }
@@ -66,6 +85,16 @@ import Logo from './Logo.astro';
       <use xlink:href="#logo">
     </svg>
   </a>
+
+  <div class="internal-links">
+    <a class="internal-link" href="/#carreira">
+      Carreira @ Comunida.dev
+    </a>
+
+    <a class="internal-link" href="/mentoria">
+      Mentoria
+    </a>
+  </div>
 
   <a class="social" href="https://www.youtube.com/channel/UC706xZkWHE38HnuhcqCsb5g" aria-label="Canal da Comunida.dev no YouTube" target="_blank" rel="noopener">
     <Icon name="mdi:youtube" class="icon" />
