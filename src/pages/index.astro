@@ -1,43 +1,14 @@
 ---
 
-import Icon from 'astro-icon';
-
-import MainHead from '../components/MainHead.astro';
-import Nav from '../components/Nav.astro';
+import Page from '../layouts/Page.astro';
 import Header from '../components/Header.astro';
-import Organizers from '../components/Organizers.astro';
 import CarreiraComunidadev from '../components/CarreiraComunidadev.astro';
-import Logo from '../components/Logo.astro';
-
-import GoogleTagManagerHead from '../components/GoogleTagManager/Head.astro';
-import GoogleTagManagerBody from '../components/GoogleTagManager/Body.astro';
-
-const googleTagManagerId = 'GTM-W93Q3BD';
-const inProduction = import.meta.env.PROD;
+import Organizers from '../components/Organizers.astro';
 
 ---
 
-<html lang="pt">
-	<head>
-    <MainHead />
-    {inProduction && <GoogleTagManagerHead id={googleTagManagerId} />}
-
-    <style>
-      .wrapper {
-        max-width: 960px;
-        margin: 2rem auto;
-        padding: 0 2rem;
-      }
-		</style>
-	</head>
-	<body>
-    {inProduction && <GoogleTagManagerBody id={googleTagManagerId} />}
-    <Nav />
-		<main class="wrapper">
-      <Header />
-      <CarreiraComunidadev />
-      <Organizers />
-      <Logo />
-		</main>
-	</body>
-</html>
+<Page>
+  <Header />
+  <CarreiraComunidadev />
+  <Organizers />
+</Page>
