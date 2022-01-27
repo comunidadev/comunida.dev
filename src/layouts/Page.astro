@@ -10,11 +10,13 @@ import GoogleTagManagerBody from '../components/GoogleTagManager/Body.astro';
 const googleTagManagerId = 'GTM-W93Q3BD';
 const inProduction = import.meta.env.PROD;
 
+const { title, description } = Astro.props;
+
 ---
 
 <html lang="pt">
   <head>
-    <MainHead />
+    <MainHead {title} {description} />
     {inProduction && <GoogleTagManagerHead id={googleTagManagerId} />}
 
     <style>
