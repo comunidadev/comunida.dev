@@ -4,40 +4,57 @@ import Page from '../layouts/Page.astro';
 
 ---
 
-<Page title="Mentoria @ Comunida.dev" description="Vagas de mentoria gratuitas para pessoas desenvolvedoras júnior, pleno e sênior.">
-  <h1>Mentoria com Tadeu Zagallo</h1>
-  <p>Fala pessoal, conforme prometido estão abertas as inscrições para a primeira turma de mentorias comigo através da comunidade. Porém, queria deixar um aviso: essa é minha primeira vez oferecendo uma mentoria mais "formal", e apesar de ter me preparado, gostaria de pedir as pessoas que quiserem participar que estejam dispostas a evoluir comigo, e que eu possa contar com seu feedback durante o processo.</p>
+<style>
+p, li {
+  font-size: var(--f-u1);
+}
 
-  <h2>Perfil</h2>
-  <p>Pessoas desenvolvedoras júnior, pleno ou sênior.</p>
+.section-title {
+  font-size: var(--f-u8);
+}
 
-  <h2>Sobre mim</h1>
-  <p>
-    Entrei na área de desenvolvimento há aproximadamente 12 anos. Durante os primeiros 5 anos trabalhei em pequenas agências no Brasil. Em 2015 saí para trabalhar como desenvolvedor pleno no Facebook, depois fui desenvolvedor sênior no Uber e na Apple e atualmente trabalho como <i>principal engineer</i> na Klarna.
-  </p>
-  <p>
-    Tópicos e tecnologias que eu tenho familiaridade/posso ajudar:
-  </p>
-  <ul>
-    <li>Progressão de carreira;</li>
-    <li>Carreira internacional / grandes empresas;</li>
-    <li>Design e implementação de linguagens de programação;</li>
-    <li>Performance de aplicações web e nativas;</li>
-    <li>Linguagens que tenho maior familiaridade: C++, JavaScript, Haskell e OCaml.</li>
-  </ul>
+.section-title-sm {
+  font-size: var(--f-u6);
+}
+</style>
 
-  <h2>Formato</h2>
-  <ul>
-    <li>1x sessão de 1h introdutória para entender seus objetivos com a mentoria;</li>
-    <li>3x sessões de 1h, 1x por mês. Pauta proposta pela pessoa mentorada;</li>
-    <li>Suporte assíncrono via chat e/ou email durante toda a duração da mentoria;</li>
-    <li>Duração: 3 meses;</li>
-    <li>100% gratuito.</li>
-  </ul>
+<Page title="Mentoria @ Comunida.dev" description="Vagas de mentoria 100% gratuitas">
+  <section>
+    <h2 class="section-title">Mentoria Comunida.dev - 2.0</h2>
+    <p>
+      Quando abrimos as primeiras turmas de mentoria no modelo de 4 sessões de 1 hora, o número de candidatos excedeu qualquer expectativa, o que foi sensacional, mas também mostrou que a gente precisaria de um modelo diferente se quisesse ajudar um número maior de pessoas. Essa é nossa humilde tentativa para esse novo modelo.
+    </p>
 
-  <h2>Datas</h2>
-  <p>Inscrições abertas até o final do dia 06/02/2022. Selecionarei 4 pessoas para o primeiro trimestre do ano e entrarei em contato com mais informações até dia 13/02/2022.</p>
+    <p>
+      A ideia é: ao invés de abrirmos inscrições individualmente para cada pessoa que quiser oferecer mentorias, vamos ter um cadastro central, aonde divulgaremos vagas para sessões avulsas de 30 minutos.
+    </p>
 
-  <h2>Se interessou?</h2>
-  <p><a href="https://docs.google.com/forms/d/e/1FAIpQLScjRL_gAKs_SXmqIcSDGRsKHlKebnJ9tFCZDOeJ3-PCWfPpGg/viewform" rel="noopener">Faça sua inscrição aqui</a></p>
+    <p>
+      O processo é simples:
+    </p>
+      <ul>
+        <li>Primeiramente, para ficar sabendo das próximas mentorias, <a href="https://forms.gle/PBi855acUAUsoDpN7" target="_blank" rel="noopener">cadastre-se aqui</a></li>
+        <li>Toda semana, mentores registram seus horários disponíveis para a próxima semana</li>
+        <li>Você rcebe um email com o compilado das vagas disponíveis</li>
+        <li>Procure uma pessoa mentora de acordo com os seus objetivos para a mentoria e reserve um horário (se ainda estiver disponível).</li>
+        <li><a href="#tips">Prepare-se</a> e aproveite a mentoria!</li>
+      </ul>
+
+    <p>
+      Esse modelo é mais leve, mais flexível e mais fácil de escalar. Vamos fazer um teste, mas esperamos que assim a gente consiga conectar mais pessoas. Como sempre, esse é um processo iterativo, e todo feedback é bem vindo!
+    </p>
+  </section>
+
+  <section id="tips">
+    <h2 class="section-title-sm">Algumas dicas para aproveitar ao máximo a sua mentoria</h2>
+    <ul>
+      <li>Prepare algumas perguntas ou assuntos que você gostaria de discutir durante a mentoria</li>
+      <li>Tire uns minutos para dar uma olhada no perfil da pessoa mentora antes da mentoria e pense como ela pode te ajudar</li>
+      <li>Lembre-se que a pauta para a mentoria é responsabilidade da pessoa mentorada.</li>
+    </ul>
+  </section>
+
+  <section id="mentors">
+    <!-- TODO -->
+  </section>
 </Page>
