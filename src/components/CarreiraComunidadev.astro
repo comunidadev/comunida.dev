@@ -2,14 +2,14 @@
 
 import Icon from 'astro-icon';
 const guest = {
-  name: 'Marcelo Quinta',
-  bio: 'Marcelo Quinta é engenheiro de software a 15+ anos, professor licenciado da Universidade Federal de Goiás, Google Developer Expert em Android, e atualmente Tech Lead no WhatsApp, um dos apps com maior número de usuários no mundo.',
+  name: 'Thiago Ghisi',
+  bio: 'Líder de engenharia com passagens pela Apple, American Express e ThoughtWorks. Já atuou como Desenvolvedor, QA, Gerente de projetos, DevOps e Consultor de Processo de Desenvolvimento.Tem mais de 15 anos de experiência desenvolvendo software usando práticas ágeis com equipes ao redor do mundo.',
   website: '',
-  twitter: 'mrquinta',
-  linkedin: 'marcelo-quinta-6444bb22',
-  date: 'quinta-feira, 3 de Fevereiro às 18:00',
+  twitter: 'thiagoghisi',
+  linkedin: 'thiagoghisi',
+  date: 'quinta-feira, 17 de Fevereiro às 18:00',
   liveURL: '',
-  formURL: 'https://forms.gle/9au4BK7FMBZ2fKk57',
+  formURL: 'https://forms.gle/C1sYPvPyWEydKxvCA',
 };
 ---
 
@@ -67,12 +67,9 @@ a:hover {
   <div class="guest">
     <picture>
       <source srcset="
-        /assets/guest/200.webp 1x,
-        /assets/guest/400.webp 2x" type="image/webp">
-      <source srcset="
-        /assets/guest/200.jpg 1x,
-        /assets/guest/400.jpg 2x" type="image/jpeg">
-      <img src="/assets/guest/200.jpg" class="bio-photo" alt={`Foto do perfil de ${guest.name}`} width=200 height=200>
+        /assets/guest/200.png 1x,
+        /assets/guest/400.png 2x" type="image/png">
+      <img src="/assets/guest/200.png" class="bio-photo" alt={`Foto do perfil de ${guest.name}`} width=200 height=200>
     </picture>
     <div>
       <p>
@@ -95,7 +92,7 @@ a:hover {
         {guest.liveURL && <a href={guest.liveURL}>Ative o lembrete aqui!</a>}
       </p>
       <p>
-        Tem uma pergunta pro Marcelo? <a href={guest.formURL} target="_blank" rel="noopener">Envie suas perguntas aqui</a> ou ao vivo.
+        Tem uma pergunta pro {guest.name}? <a href={guest.formURL} target="_blank" rel="noopener">Envie suas perguntas aqui</a> ou ao vivo.
       </p>
     </div>
   </div>
