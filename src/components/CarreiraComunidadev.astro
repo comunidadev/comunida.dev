@@ -3,7 +3,7 @@
 import Icon from 'astro-icon';
 const guest = {
   name: 'Thiago Ghisi',
-  bio: 'Líder de engenharia com passagens pela Apple, American Express e ThoughtWorks. Já atuou como Desenvolvedor, QA, Gerente de projetos, DevOps e Consultor de Processo de Desenvolvimento.Tem mais de 15 anos de experiência desenvolvendo software usando práticas ágeis com equipes ao redor do mundo.',
+  bio: 'Líder de engenharia com passagens pela Apple, American Express e ThoughtWorks. Já atuou como Desenvolvedor, QA, Gerente de projetos, DevOps e Consultor de Processo de Desenvolvimento. Tem mais de 15 anos de experiência desenvolvendo software usando práticas ágeis com equipes ao redor do mundo.',
   website: '',
   twitter: 'thiagoghisi',
   linkedin: 'thiagoghisi',
@@ -67,9 +67,13 @@ a:hover {
   <div class="guest">
     <picture>
       <source srcset="
-        /assets/guest/200.png 1x,
-        /assets/guest/400.png 2x" type="image/png">
-      <img src="/assets/guest/200.png" class="bio-photo" alt={`Foto do perfil de ${guest.name}`} width=200 height=200>
+        /assets/guest/200.webp 1x,
+        /assets/guest/400.webp 2x" type="image/webp">
+
+      <source srcset="
+        /assets/guest/200.jpg 1x,
+        /assets/guest/400.jpg 2x" type="image/jpeg">
+      <img src="/assets/guest/200.jpg" class="bio-photo" alt={`Foto do perfil de ${guest.name}`} width=200 height=200>
     </picture>
     <div>
       <p>
