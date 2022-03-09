@@ -2,14 +2,14 @@
 
 import Icon from 'astro-icon';
 const guest = {
-  name: 'Thiago Ghisi',
-  bio: 'Líder de engenharia com passagens pela Apple, American Express e ThoughtWorks. Já atuou como Desenvolvedor, QA, Gerente de projetos, DevOps e Consultor de Processo de Desenvolvimento. Tem mais de 15 anos de experiência desenvolvendo software usando práticas ágeis com equipes ao redor do mundo.',
+  name: 'Isa Silveira',
+  bio: 'Isa passa uma grande parte do seu tempo pensando em como resolver problemas com tecnologia e no papel que isso desempenha na nossa vida. Ela é uma Mozilla Tech Speaker e atualmente trabalha no Spotify, em Estolcomo. Suas duas grandes missões são democratizar o acesso à web e fazer desenvolvedores se levarem um pouco menos a sério (a segunda sendo definitivamente mais difícil). Em seu tempo livre ela ama escalar e esquiar (ou aparentemente qualquer atividade que realce seu incrível sotaque carioca).',
   website: '',
-  twitter: 'thiagoghisi',
-  linkedin: 'thiagoghisi',
-  date: 'quinta-feira, 17 de Fevereiro às 18:00',
-  liveURL: '',
-  formURL: 'https://forms.gle/C1sYPvPyWEydKxvCA',
+  twitter: 'silveira_bells',
+  linkedin: '',
+  date: 'quinta-feira, 10 de Março às 18:00',
+  liveURL: 'https://www.youtube.com/watch?v=2TVHvahyiLc',
+  formURL: 'https://forms.gle/T8EtRWujgnu2RgJm7',
 };
 ---
 
@@ -83,12 +83,16 @@ a:hover {
             <Icon name='mdi:globe' class="icon" />
           </a>
         }
-        <a href={`https://twitter.com/${guest.twitter}`} aria-label={`${guest.name} no Twitter`} target="_blank" rel="noopener">
-          <Icon name='mdi:twitter' class="icon" />
-        </a>
-        <a href={`https://www.linkedin.com/in/${guest.linkedin}/`} aria-label={`${guest.name} no LinkedIn`} target="_blank" rel="noopener">
-          <Icon name='mdi:linkedin' class="icon" />
-        </a>
+        { guest.twitter && 
+          <a href={`https://twitter.com/${guest.twitter}`} aria-label={`${guest.name} no Twitter`} target="_blank" rel="noopener">
+            <Icon name='mdi:twitter' class="icon" />
+          </a>
+        }
+        { guest.linkedin && 
+          <a href={`https://www.linkedin.com/in/${guest.linkedin}/`} aria-label={`${guest.name} no LinkedIn`} target="_blank" rel="noopener">
+            <Icon name='mdi:linkedin' class="icon" />
+          </a>
+        }
       </p>
       <p class="guest-bio">{guest.bio}</p>
       <p>
