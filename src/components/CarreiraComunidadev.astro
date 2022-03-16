@@ -2,6 +2,7 @@
 
 import Icon from 'astro-icon';
 const guest = {
+  id: 'samanta-cicilia',
   name: 'Samanta Cicilia de Barros Souza',
   bio: 'Hoje atuo como Head of Engineering na Pagar.me, tenho 10 anos de experiência na área, 5 deles como líder de times. Sou co-fundadora do Agile Testers (https://agiletesters.com.br/), apaixonada por comunidades e compartilhar conhecimento.',
   website: 'https://samantacicilia.com/',
@@ -66,14 +67,15 @@ a:hover {
   <p>Uma série de lives no <a href="https://www.youtube.com/channel/UC706xZkWHE38HnuhcqCsb5g" target="_blank" rel="noopener">nosso canal do  YouTube</a> com entrevistas semanais discutindo diversos tópicos relacionados a carreira dev. Conheça a nossa próxima convidada:</p>
   <div class="guest">
     <picture>
-      <source srcset="
-        /assets/guest/200.webp 1x,
-        /assets/guest/400.webp 2x" type="image/webp">
+      <source srcset={`
+        /assets/${guest.id}/200.webp 1x,
+        /assets/${guest.id}/400.webp 2x`} type="image/webp">
 
-      <source srcset="
-        /assets/guest/200.jpg 1x,
-        /assets/guest/400.jpg 2x" type="image/jpeg">
-      <img src="/assets/guest/200.jpg" class="bio-photo" alt={`Foto do perfil de ${guest.name}`} width=200 height=200>
+      <source srcset={`
+        /assets/${guest.id}/200.jpg 1x,
+        /assets/${guest.id}/400.jpg 2x`} type="image/jpeg">
+
+  <img src={`/assets/${guest.id}/200.jpg`} class="bio-photo" alt={`Foto do perfil de ${guest.name}`} width=200 height=200>
     </picture>
     <div>
       <p>
